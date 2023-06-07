@@ -8,7 +8,9 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
-app.use(cors());
+app.use(cors({
+  origin: ["https://lvan-ni.github.io/fullstack-frontend/"]
+}));
 
 
 app.use(logger('dev'));
